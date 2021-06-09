@@ -33,7 +33,7 @@ section {
 img {
     width: 100%;
     height: auto;
-}
+}   
 
 li {
     list-style: none;
@@ -46,7 +46,7 @@ li:hover {
 
 
 h1 {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'portfolioregular';
     font-size: 4rem;
 }
 
@@ -87,8 +87,20 @@ p {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+@font-face {
+    font-family: 'portfolioregular';
+    src: url('fonts/portfolio-regular-webfont.woff2') format('woff2'),
+         url('portfolio-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.logo {
+    font-weight: 400;
+}
+
 .logo a {
-    font-weight: 700;
+    font-weight: 400;
     color: black;
 }
 
@@ -198,12 +210,18 @@ header nav {
     scroll-snap-align: start;
 }
 
+#first_section_forside h1 {
+   font-size: 10rem;
+   letter-spacing: 5rem;
+   line-height: 5rem;
+}
+
 
 #second_section_forside .section_wrapper_forside_1 {
     display: grid;
     align-items: center;
     background-color: violet;
-    height: calc(100vh - 9rem);
+    height: 20vh;
     width: 100%;
 }
 
@@ -211,7 +229,7 @@ header nav {
     display: grid;
     align-items: center;
     background-color: rgb(130, 238, 206);
-    height: 100vh;
+    height: 20vh;
     width: 100%;
 }
 
@@ -219,7 +237,7 @@ header nav {
     display: grid;
     align-items: center;
     background-color: rgb(197, 238, 130);
-    height: 100vh;
+    height: 20vh;
     width: 100%;
 } /
 
@@ -227,7 +245,7 @@ header nav {
     display: grid;
     align-items: center;
     background-color: orange;
-    height: 100vh;
+    height: 20vh;
     width: 100%;
 }
 
@@ -235,13 +253,12 @@ header nav {
 /* ABOUT - MOBIL */
 .about_wrapper {
     display: grid; 
-    max-height: 87.3%;
+    /* max-height: 87.3%; */
     width: 100%;
     gap: 2rem;
 }
 
 .about_col_1 {
-    height: 100vh;
     background-image: url(img/about.jpg);
     background-position: 80%;
     background-size: cover;
@@ -249,7 +266,7 @@ header nav {
 }
 
 .about_col_2 {
-    height: 100vh;
+    height: 90vh;
     /* display: grid; */
     align-items:baseline;
 }
@@ -451,8 +468,9 @@ header nav ul {
     display: grid;
     align-items: center;
     background-color: violet;
-        height: 100%;
-        width: 100%;
+    height: 100%;
+    width: 100%;
+    text-align: center;
 }
 
 #second_section_forside .section_wrapper_forside_2 {
@@ -490,7 +508,9 @@ header nav ul {
 /* ABOUT - DESKTOP */
 
 .afsnit_1 {
+    }
 
+.afsnit_1 h3{
 }
 
 .about_wrapper {
@@ -499,15 +519,10 @@ header nav ul {
 }
 .about_col_1 {
     grid-column: 1/2;
-    max-height: 87.3%;
+    max-height: 96%;
     display: grid;
     text-align: center;
     align-items: flex-end;
-}
-
-.about_col_2 {
-    grid-column: 2/3;
-    max-height: 87.3%;;
 }
 
 .pos_text{
@@ -518,6 +533,7 @@ header nav ul {
 
 .about_col_2 h3 {
     padding-bottom: 1rem;
+    text-align: center;
 }
 
 .about_col_2 p {
@@ -528,7 +544,8 @@ header nav ul {
 .about_col_2 {
     grid-column: 2/3;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    max-height: 96%;
+    align-items: center;
 }
 
 .cv {
